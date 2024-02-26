@@ -4,12 +4,13 @@
   --primary-color: black;
   --secondary-color: rgba(27, 27, 27, 1);
   --nav-color: rgba(0, 0, 0, 0.6);
+  --hiring-process-color: rgba(27, 27, 27, 1);
 
   --font-color: white;
 
   --font-heading: "Montserrat";
   --font-primary: "arial";
-  --font-secondary: "Inter";
+  --font-secondary: "poppins";
   --font-nav: "poppins";
 }
 
@@ -25,8 +26,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   background-color: rgba(0, 0, 0, 0.6);
   height: 130px;
   position: fixed;
@@ -54,29 +53,25 @@ body {
   font-family: var(--font-nav);
 }
 
-/* .Banner-section {
+.banner-text1 {
   position: relative;
-  z-index: 0;
+  color: var(--font-color);
+  bottom: 420px;
+  left: 60px;
+  font-family: var(--font-primary);
 }
 
-.banner-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-} */
-
-/* .nav-bar > nav > ul > li {
-  list-style: none;
+.banner-text2 {
+  position: relative;
+  color: var(--font-color);
+  bottom: 350px;
+  left: 60px;
+  font-size: xx-large;
+  font-family: var(--font-primary);
 }
-
-.nav-bar > nav > ul > li > a {
-  text-decoration: none;
-} */
-
-/* overview */
 
 .overview-section {
-  color: white;
+  color: var(--font-color);
   /* gap: 0; */
 }
 
@@ -84,7 +79,7 @@ body {
   text-align: center;
   margin: 2rem;
   font-weight: 300;
-  font-family: Montserrat;
+  font-family: ;
   gap: 0;
 }
 
@@ -94,6 +89,17 @@ body {
   background: white;
   left: 100px;
   margin: 4rem;
+  /* color: black; */
+}
+
+.overview-text > p {
+  /* text-align: left; */
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 1);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  width: 500px;
+  font-size: x-large;
 }
 
 .overview-images {
@@ -107,3 +113,47 @@ body {
   position: absolute;
   left: 600px;
 }
+
+.hiring-title {
+  color: white;
+  text-align: center;
+  margin: 4rem;
+}
+
+.Hiring-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hiring-section > div:last-child {
+  width: 234px;
+  height: 73px;
+  border: 1px solid white;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--hiring-process-color);
+}
+
+/* .div1 > div > p {
+  color: white;
+}
+
+.div2 {
+  width: 234px;
+  height: 73px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hiring-process-color);
+}
+
+.div2 > div > p {
+  color: white;
+} */
