@@ -59,7 +59,7 @@ body {
 .Banner-section {
   margin-left: 50px;
   margin-right: 50px;
-  /* width: 1366px; */
+
   height: 600px;
   align-items: center;
 }
@@ -91,11 +91,12 @@ body {
   color: white;
   border: 2px white solid;
 }
-/* End of banner section */
+
+/* End of Header Section */
+
 .overview-section {
   margin: 7rem;
   color: var(--font-color);
-  /* gap: 0; */
 }
 
 .overview-header {
@@ -106,89 +107,119 @@ body {
   gap: 0;
 }
 
-.overview-text {
-  width: 680px;
-  height: 337px;
-  background: white;
-  left: 100px;
-  /* margin: 4rem; */
-  /* color: black; */
-  /* margin-bottom: 5rem; */
-}
-
-.overview-text > p {
-  /* text-align: left; */
-  margin-top: 10px;
-  color: rgba(0, 0, 0, 1);
-  font-family: var(--font-secondary);
-  font-weight: 400;
-  width: 500px;
-  font-size: x-large;
-}
-
-.overview-images {
+.overview-context > div:first-child > ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
   align-items: center;
-  grid-gap: 0;
+  position: relative;
 }
 
-.overview-image {
-  position: absolute;
-  left: 600px;
+.overview-context > div:first-child > ul > li > p {
+  background: white;
+  color: black;
+  height: 255px;
+  font-family: var(--font-heading);
+  line-height: 30px;
+  padding: 30px 30px 30px;
 }
 
 /* End of Overview */
+.Hiring-section {
+  margin-bottom: 5rem;
+}
 
-.hiring-title {
+.Hiring-section > div:first-child {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   color: white;
   text-align: center;
-  margin: 4rem;
+  font-family: var(--font-heading);
+  font-size: 28px;
 }
 
-.Hiring-section {
-  margin-bottom: 2rem;
-}
-
-.outer-div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  color: var(--font-color);
+.Hiring-section > div:last-child {
+  margin-left: 100px;
   /* outline: 2px solid red; */
-  padding: 20px;
 }
 
-.inner-div {
-  padding: 20px;
-  /* text-align: center; */
-  background: var(--hiring-process-color);
-  border: 2px solid white;
-  z-index: 2;
-}
-
-.inner-div > p {
-  width: 200px;
-  font-size: 1rem;
-  text-align: center;
-  /* outline: 1px solid red; */
-  padding: 10px;
+.Hiring-section > div:last-child > ul {
+  color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  list-style-type: none;
+  gap: 115px;
+  text-align: center;
+  font-family: var(--font-heading);
 }
 
+.Hiring-section > div:last-child > ul > li {
+  height: 73px;
+  width: 234px;
+  background-color: var(--secondary-color);
+  border: 1px solid white;
+}
 .Hiring-section > hr {
   width: 80%;
   border: 1px solid white;
   margin: 0 auto;
   position: relative;
-  top: 80px;
+  top: 53px;
+  z-index: -1;
+  background: rgba(255, 255, 255, 1);
 }
-
 /* End of Hiring */
 
 .jobs-section {
+  align-items: center;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.jobs-section > div:first-child {
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.searchbox-div {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 130px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.search-box {
+  background-color: black;
+  height: 60px;
+  width: 417px;
+  border: none;
+  border-style: none;
+}
+
+.job-cards > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.job-cards > ul > li {
+  background-color: white;
+  color: black;
+  width: 260px;
+  height: 328px;
+  padding-left: 20px;
+  font-family: var(--font-heading);
+  padding-bottom: 5px;
+}
+
+.job-cards > ul > li > a {
+  text-decoration: none;
+}
+
+/* .jobs-section {
   background-color: var(--hiring-process-color);
   margin: 0;
   object-fit: cover;
@@ -198,7 +229,7 @@ body {
 .jobs-section-titleText {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the flex-start position */
+  align-items: flex-start;
 }
 
 .jobs-section > div:first-child > h1 {
@@ -211,7 +242,6 @@ body {
 .searchbox-div {
   display: flex;
   align-items: flex-start;
-  /* margin-top: 100px; */
 }
 
 .search-box {
@@ -219,7 +249,7 @@ body {
   color: white;
   width: 350px;
   height: 50px;
-  /* top: 253px; */
+
   margin-top: 130px;
   margin-left: 70px;
   border-style: none;
@@ -232,14 +262,12 @@ body {
   align-items: center;
 }
 .job-list > div {
-  /* text-align: center; */
   height: 315.95px;
   width: 265.13px;
   background-color: white;
   margin-top: 100px;
   margin-left: 50px;
-  /* margin-bottom: 50px; */
-}
+} */
 
 .jobs-btn {
   padding: 20px;
@@ -254,15 +282,24 @@ body {
   border-radius: 5px;
 }
 
+/* End of Hiring Process */
+
+.resume-text {
+  position: relative;
+  color: white;
+  text-align: center;
+  bottom: 350px;
+  font-family: var(--font-heading);
+}
 .resume-section {
-  /* margin: 0; */
-  margin-top: 5rem;
-  margin-right: 15rem;
-  margin: 0 auto;
-  /* width: 100%; */
+  margin-top: 3rem;
 }
 
-/* .resume-section > img {
-  width: 100%;
-  align-items: center;
-} */
+.apply-btn {
+  position: relative;
+  bottom: 300px;
+  left: 660px;
+  width: 195px;
+  height: 69px;
+  font-family: var(--font-heading);
+}
