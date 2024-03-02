@@ -29,7 +29,7 @@ body {
   align-items: flex-end;
   background-color: rgba(0, 0, 0, 0.6);
   height: 130px;
-  position: fixed;
+  /* position: fixed; */
   width: 1410px;
 }
 
@@ -57,9 +57,9 @@ body {
 /* End of Navbar */
 
 .Banner-section {
-  margin-left: 50px;
-  margin-right: 50px;
-
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -60px;
   height: 600px;
   align-items: center;
 }
@@ -302,4 +302,25 @@ body {
   width: 195px;
   height: 69px;
   font-family: var(--font-heading);
+}
+/* Resume-section finished */
+
+.description {
+  color: white;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  font-family: var(--font-heading);
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 1210px;
+}
+
+.apply-btn1 {
+  height: 69px;
+  width: 298px;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
