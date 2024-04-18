@@ -95,21 +95,28 @@ body {
 }
 
 .overview-context > main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
   list-style-type: none;
   align-items: center;
   position: relative;
 }
 
-.overview-context > main > figcaption > article {
+.overview-context > main > article {
+  
   background: white;
   color: black;
   height: 255px;
   font-family: var(--font-heading);
   line-height: 30px;
   padding: 30px 30px 30px;
+  /* display: flex; */
 }
+
+/* .overview-context > main > figure{
+  display: flex;
+} */
 
 /* End of Overview */
 .Hiring-section {
