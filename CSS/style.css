@@ -96,25 +96,31 @@ body {
 }
 
 .overview-context > main {
-  
   display: flex;
-  list-style-type: none;
   align-items: center;
   position: relative;
+}
+
+.overview-context > main > article {
+  background: white;
+  color: black;
+  height: 280px; 
+  font-family: var(--font-heading);
+  line-height: 30px;
+  padding: 30px;
+
+  flex: 1; 
+}
+
+.overview-context > main > figure {
+  margin: 0;
+}
+
+.overview-context > main > figure > img {
+  height: calc(100% + 10px); 
   
 }
 
-.overview-context > main > article  {
-  
-  background: white;
-  color: black;
-  height: 280px;
-  font-family: var(--font-heading);
-  line-height: 30px;
-  padding: 30px 30px 30px;
- 
-  
-}
 
 
 
